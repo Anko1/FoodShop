@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Market</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="wrapper">
+    <div class="wrapper">
+        <h2>Magic Market</h2>
+        <div id="market"></div>
+    </div>
+    <div class="wrapper">
+        <div class="control">
+            <h2 id="cartHead">Cart</h2>
+            <button id="buy">Buy</button>
+        </div>
+        <div id="cart"></div>
+    </div>
+
+    <div id="popup">
+        <h3>Bill</h3>
+        <div id="p-content">
+            <!--<div class="b-item">-->
+                <!--<span class="b-name">Hamburger x 2</span>-->
+                <!--<span class="b-price"> 30 $</span>-->
+            <!--</div>-->
+        </div>
+        <span id="p-total">Total: 200$</span>
+    </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="classes/Food.js"></script>
+<script src="classes/Bill.js"></script>
+<script src="classes/MarketManager.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

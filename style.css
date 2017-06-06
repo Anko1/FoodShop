@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fontdiner Swanky', cursive;
+    color: white;
+}
+
+#wrapper{
+    background: url("images/bg.jpg");
+    background-size: 10%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2% 0;
+}
+
+.wrapper{
+    width: 40%;
+    height: 90%;
+    text-align: center;
+}
+
+#market, #cart{
+    overflow: auto;
+    height: 100%;
+}
+
+#cartHead{
+    letter-spacing: 5px;
+    display: inline;
+}
+
+.control{
+    display: flow-root; //clearfix
+}
+
+#buy{
+    color: black;
+    font-size: 24px;
+    border-radius: 20px;
+    padding: 5px 15px;
+    float: right;
+}
+
+.food{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #a1887f;
+    border-radius: 15px;
+}
+
+.food:nth-child(odd){
+    background: #bdbdbd;
+}
+
+.f-icon{
+    box-sizing: content-box;
+    border: 1px solid white;
+    border-radius: 7px;
+    padding: 5px;
+    width: 64px;
+    height: auto;
+}
+
+.f-name{
+    width: 30%;
+}
+
+.f-buy{
+    display: block;
+    width: 48px;
+    height: 48px;
+    transition: .3s;
+}
+
+.f-buy:hover {
+    cursor: pointer;
+    color: yellow;
+}
+
+#popup{
+    width: 400px;
+    position: fixed;
+    background-color: white;
+}
+
+#popup *{
+    color: black;
+    text-align: center;
+}
+
+.b-item{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin: 10px 0;
+}
+
+#p-total{
+    display: block;
+    text-align: right;
+    margin-right: 20px;
+}
